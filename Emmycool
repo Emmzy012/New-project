@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huddle - Build Your Community</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <img src="images/logo.svg" alt="Huddle Logo" class="logo" />
+      <a href="#" class="btn btn-outline">Try It Free</a>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Build The Community<br>Your Fans Will Love</h1>
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <a href="#" class="btn">Get Started For Free</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/illustration-mockups.svg" alt="Mockups" />
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature container">
+      <img src="images/illustration-grow-together.svg" alt="Grow Together" />
+      <div>
+        <h2>Grow Together</h2>
+        <p>Generate meaningful discussions with your audience and build a strong, loyal community.</p>
+      </div>
+    </div>
+
+    <div class="feature container reverse">
+      <img src="images/illustration-flowing-conversation.svg" alt="Flowing Conversations" />
+      <div>
+        <h2>Flowing Conversations</h2>
+        <p>You wouldn’t paginate a conversation in real life, so why do it online?</p>
+      </div>
+    </div>
+
+    <div class="feature container">
+      <img src="images/illustration-your-users.svg" alt="Your Users" />
+      <div>
+        <h2>Your Users</h2>
+        <p>Once signed in to your app, users can start chatting immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta container">
+    <h2>Ready To Build Your Community?</h2>
+    <a href="#" class="btn">Get Started For Free</a>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <div class="footer-col">
+        <img src="images/logo.svg" alt="Huddle Logo" class="logo" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Phone: +1-543-123-4567</p>
+        <p>Email: example@huddle.com</p>
+      </div>
+      <div class="footer-col">
+        <a href="#">About Us</a>
+        <a href="#">What We Do</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <a href="#">Career</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <p class="copyright">© Copyright 2025 Huddle. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+:root {
+  --pink: #ff52bf;
+  --light-pink: #ff8fd8;
+  --dark-blue: #00252e;
+  --gray-blue: #808d99;
+  --bg: #f5faff;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--dark-blue);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: var(--bg);
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+.btn {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--light-pink);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.features {
+  background-color: var(--white);
+  padding: 4rem 0;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  text-align: center;
+  background-color: var(--white);
+  padding: 3rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 4rem auto;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 3rem 1rem 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col a {
+  display: block;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer .logo {
+  margin-bottom: 1rem;
+  width: 120px;
+}
+
+footer p {
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  opacity: 0.6;
+}
+echo "# New-project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Emmzy012/New-project.git
+git push -u origin main
